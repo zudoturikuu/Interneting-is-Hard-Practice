@@ -24,6 +24,14 @@
 
 .header {
   background-color: #B2D6FF;
+  height: auto;
+  justify-content: inherit;
+  align-items: inherit;
+}
+
+.photo img {
+  width: 100%;
+  display: block;
 }
 
 .content {
@@ -45,6 +53,11 @@
 
 .feature-3 {
   background-color: #C8C6FA;
+}
+
+.illustration img {
+  width: 100%;
+  display: block;
 }
 
 /*Mobile*/
@@ -97,3 +110,17 @@
 /*Note: You cannot nest .page selectors inside a body{} element, 
 but you can do "body .page" which is redundant as the .page 
 and other selectors are already in the body and are thus specific enough*/
+
+/*Note: For when you want the imnages to look landscape vs horizontal
+<div class='section header'>
+  <div class='photo'>
+    <picture>
+      <source media='(min-width: 401px)'
+              srcset='images/photo-big.jpg'/>
+      <source media='(max-width: 400px)'
+              srcset='images/photo-tall.jpg'/>
+      <img src='images/photo-small.jpg'/>
+    </picture>
+  </div>
+</div>
+*/
