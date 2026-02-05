@@ -1,0 +1,19 @@
+
+section, article, aside, footer, header, nav {
+  display: block;
+}
+
+article header h1 {
+    color: red;
+}
+
+.page {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-direction: space-between;
+}
